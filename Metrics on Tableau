@@ -1,0 +1,27 @@
+### Metrics 
+
+Office working days = [Count Attendance Key] - COUNT(IF [Attendance Key] = 'WO' then [Attendance Key] END)
+WO : Week off
+
+Total Present Day = COUNT(IF [Attendance Key] = 'P' THEN [Attendance Key] END ) +
+COUNT(IF [Attendance Key] = 'WFH' THEN [Attendance Key] END )
+
+Attendace %   = Present / Office Working days
+
+
+WFH % = COUNT(IF [Attendance Key] = 'WFH' THEN [Attendance Key] END ) / [Total Present Day]
+
+
+SL % = COUNT(IF [Attendance Key] = 'SL' then [Attendance Key] END ) / [Total Offiect working days]
+
+
+% of Attendance overtime  y
+
+
+% of SL over time 
+
+
+% of WFH over time 
+
+
+Filter : Months , Weekdays
